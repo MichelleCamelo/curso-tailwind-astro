@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* Personalizaciones de Tailwind v4 */
+@theme {
+    /* Colores primarios */
+    --color-primary-light: #6028D9;
+    --color-primary: #4C1D95;
+    --color-primary-dark: #2E1065;
+
+    /* Colores secundarios */
+    --color-secondary-light: #34D399;
+    /* Verde claro */
+    --color-secondary: #059669;
+    /* Verde principal */
+    --color-secondary-dark: #065F46;
+    /* Verde oscuro */
+
+    /* Familias de fuentes */
+    --font-sans: 'Inter', 'sans-serif';
+    --font-heading: 'Ubuntu', 'sans-serif';
+
+    /* Espaciado personalizado */
+    --spacing-72: 18rem;
+
+    /* Tamaños de fuente */
+    --font-size-xxs: 0.65rem;
+    /* Define el valor que desees para xxs */
+}
+
+/* Definir clases personalizadas para facilitar el uso */
+@layer utilities {
+
+    /* Clases para colores */
+    .bg-primary {
+        background-color: var(--color-primary);
+    }
+
+    .bg-primary-light {
+        background-color: var(--color-primary-light);
+    }
+
+    .bg-primary-dark {
+        background-color: var(--color-primary-dark);
+    }
+
+    .bg-secondary {
+        background-color: var(--color-secondary);
+    }
+
+    .bg-secondary-light {
+        background-color: var(--color-secondary-light);
+    }
+
+    .bg-secondary-dark {
+        background-color: var(--color-secondary-dark);
+    }
+
+    .text-primary {
+        color: var(--color-primary);
+    }
+
+    .text-secondary {
+        color: var(--color-secondary);
+    }
+
+    /* Clases para fuentes */
+    .font-sans {
+        font-family: var(--font-sans);
+    }
+
+    .font-heading {
+        font-family: var(--font-heading);
+    }
+
+    /* Clases para espaciado */
+    .p-72 {
+        padding: var(--spacing-72);
+    }
+
+    .m-72 {
+        margin: var(--spacing-72);
+    }
+
+    .gap-72 {
+        gap: var(--spacing-72);
+    }
+
+    /* Clases para tamaños de fuente */
+    .texto-xxs {
+        font-size: var(--font-size-xxs);
+    }
+}
